@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <View
+        android:id="@+id/wave_view"
+        android:layout_width="match_parent"
+        android:layout_height="171dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <TextView
+        android:id="@+id/tv_affichage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:gravity="center_horizontal"
+        android:text="Favoris"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_recherche"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="Recherche"
+        android:textSize="18sp"
+        android:layout_marginTop="190sp"
+        android:layout_marginLeft="30sp"
+        android:textColor="#070707"/>
+
+    <EditText
+        android:id="@+id/ed_recherche"
+        android:layout_width="198dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="249dp"
+        android:background="@drawable/round_border"
+        android:ems="10"
+        android:hint="Taper pour chercher"
+        android:inputType="textPersonName"
+        android:padding="12dp" />
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="320dp"
+        android:foregroundGravity="center_vertical"
+        />
+
+</RelativeLayout>

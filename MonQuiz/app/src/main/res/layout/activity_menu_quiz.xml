@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="false"
+    android:background="@drawable/back"
+    tools:context=".MenuQuiz">
+
+    <Button
+        android:id="@+id/btnsport"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/btnculture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Quiz Sport"
+        android:textSize="36sp"
+        app:backgroundTint="#2196F3" />
+
+    <Button
+        android:id="@+id/btnculture"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/btnhistoire"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Quiz Culture"
+        android:textSize="36sp"
+        app:backgroundTint="#2196F3" />
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:text="Menu Quiz"
+        android:textColor="#272425"
+        android:textSize="40dp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/btnhistoire"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/titre"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="Quiz Historie"
+        android:textSize="36sp"
+        app:backgroundTint="#2196F3" />
+</RelativeLayout>
